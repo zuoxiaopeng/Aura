@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerController.h"
+#include "Interaction/EnemyInterface.h"
 #include "AuraPlayerController.generated.h"
 
 /**
@@ -23,6 +24,7 @@ public:
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;
+	virtual void PlayerTick(float DeltaTime) override;
 
 private:
 	UPROPERTY(EditAnywhere, Category = "Input")
@@ -30,7 +32,16 @@ private:
 
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputAction> MoveAction;
- 
+
+	// Cursor Check
+	IEnemyInterface* LastActor = nullptr;
+	IEnemyInterface* ThisActor = nullptr;
+	
+
 private:
+	// Movement
 	void Move(const FInputActionValue& InputActionValue);
+
+	// Cursor Check
+	void CursorTrace();
 };

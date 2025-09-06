@@ -4,6 +4,7 @@
 #include "PlayerController/AuraPlayerController.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
+#include "Interaction/EnemyInterface.h"
 
 AAuraPlayerController::AAuraPlayerController()
 {
@@ -42,6 +43,45 @@ void AAuraPlayerController::SetupInputComponent()
 	
 }
 
+void AAuraPlayerController::PlayerTick(float DeltaTime)
+{
+	Super::PlayerTick(DeltaTime);
+
+	CursorTrace();
+}
+
+void AAuraPlayerController::CursorTrace()
+{
+	// detect Visible Actor
+	FHitResult CursorHit;
+	GetHitResultUnderCursor(ECC_Visibility, false, CursorHit);
+	if (!CursorHit.bBlockingHit) return;
+
+	LastActor = ThisActor;
+	ThisActor = Cast<IEnemyInterface>(CursorHit.GetActor());
+
+	/*
+	 * A. LastActor is NULL and ThisActor is NULL
+	 *		-Do Nothing
+	 * B. LastActor is Valid and ThisActor is NULL
+	 *		-UnHighlight LastActor
+	 * C. Both Actor is Valid, and aren't the Same Actor
+	 *		-Highlight ThisActor and UnHighlight LastActor
+	 * D. LastActor is NULL and ThisActor is Valid
+	 *		-Highlight ThisActor
+	 * E Both Actor is Valid, and are the Same Actor
+	 *		-Do nothing
+	 */
+	if (LastActor && ThisActor != LastActor)
+	{
+		LastActor->UnHighlightActor();
+	}
+	if (ThisActor && LastActor != ThisActor)
+	{
+		ThisActor->HighlightActor();
+	}
+}
+
 void AAuraPlayerController::Move(const FInputActionValue& InputActionValue)
 {
 	// Decide Direction by Camera Yaw Rotation
@@ -58,3 +98,5 @@ void AAuraPlayerController::Move(const FInputActionValue& InputActionValue)
 		ControlledPawn->AddMovementInput(RightDirection, InputAxisVector.X);
 	}
 }
+
+
