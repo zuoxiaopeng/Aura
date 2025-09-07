@@ -6,7 +6,7 @@
 -- Create **AuraContext** the InputMappingContext
 -- Create **MoveAction** the InputAction
 <img width="1888" height="854" alt="image" src="https://github.com/user-attachments/assets/a5ad05ba-350f-4167-be38-ae047fe03e79" />
-<p align="center">Init **Third-person top-down perspective** controller in BeginPlay</p>
+<p align="center">Init Third-person top-down perspective controller in BeginPlay</p>
 
 <img width="1270" height="637" alt="image" src="https://github.com/user-attachments/assets/736b279d-7771-47c7-9ba5-ad60e382ee06" />
 <p align="center">Move Function</p>
