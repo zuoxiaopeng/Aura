@@ -1,7 +1,7 @@
 // Default Message.
 
 
-#include "PlayerController/AuraPlayerController.h"
+#include "Player/AuraPlayerController.h"
 #include "EnhancedInputSubsystems.h"
 #include "EnhancedInputComponent.h"
 #include "Interaction/EnemyInterface.h"
@@ -59,7 +59,6 @@ void AAuraPlayerController::CursorTrace()
 
 	LastActor = ThisActor;
 	ThisActor = Cast<IEnemyInterface>(CursorHit.GetActor());
-
 	/*
 	 * A. LastActor is NULL and ThisActor is NULL
 	 *		-Do Nothing
