@@ -6,7 +6,8 @@
 -- Create **AuraContext** the InputMappingContext
 -- Create **MoveAction** the InputAction
 <img width="1888" height="854" alt="image" src="https://github.com/user-attachments/assets/a5ad05ba-350f-4167-be38-ae047fe03e79" />
-<p align="center">Init Third-person top-down perspective controller in BeginPlay</p>
+<p align="center">Init Third-person top-down Controll Setting in BeginPlay</p>
+
 
 <img width="1270" height="637" alt="image" src="https://github.com/user-attachments/assets/736b279d-7771-47c7-9ba5-ad60e382ee06" />
 <p align="center">Move Function</p>
@@ -19,4 +20,8 @@
 -- AuraEnemy inherit from IEnemyInterface to highlight enemy when cursor hovered it
 <img width="1318" height="1172" alt="image" src="https://github.com/user-attachments/assets/740b083d-718b-4194-bd9b-f98eba779e17" />
 <p align="center">CursorTrace Function</p>
+
+
+<img width="1710" height="389" alt="image" src="https://github.com/user-attachments/assets/38f1f807-af8a-47e4-a25a-148d0d4e7244" />
+<p align="center">Use EnemyInterface Custom Highlight Function Flexible</p>
 
