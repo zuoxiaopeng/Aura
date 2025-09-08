@@ -16,7 +16,7 @@
 ### Create GameMode and Interaction
 - Create **AuraGameModeBase** and set it as default
 - Create **EnemyInterface** and **IEnemyInterface**
---Expend PlayerContrroler to use mouse cursor detect Actor and Highlight the Actor
+-- Expend PlayerContrroler to use mouse cursor detect Actor and Highlight the Actor
 -- AuraEnemy inherit from IEnemyInterface to highlight enemy when cursor hovered it
 <img width="1318" height="1172" alt="image" src="https://github.com/user-attachments/assets/740b083d-718b-4194-bd9b-f98eba779e17" />
 <p align="center">CursorTrace Function</p>
