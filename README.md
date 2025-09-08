@@ -25,3 +25,16 @@
 <img width="1710" height="389" alt="image" src="https://github.com/user-attachments/assets/38f1f807-af8a-47e4-a25a-148d0d4e7244" />
 <p align="center">Use EnemyInterface Custom Highlight Function Flexible</p>
 
+## Day Three
+### AbilitySystemComponent, AttributeSet and PlayerState
+- Create **AuraAbilitySystemComponent**
+- Create **AuraAttributeSet**
+- Create **AuraPlayerState**
+-- Add AbilitySystem and AttributeSet parameter in AuraCharacterBase
+-- Init the parameters directly in AuraEnemy cause we don't need to keep the date when enemy destructed
+-- AuraPlayerState and AuraCharacterBase will use the AbilitySystemInterface to manage date
+<img width="2560" height="1440" alt="gas structure" src="https://github.com/user-attachments/assets/fbcb211f-2d2b-45ff-8b83-39925b577856" />
+<p align="center">GAS Structure</p>
+
+  
+  
