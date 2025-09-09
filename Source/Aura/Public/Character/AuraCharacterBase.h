@@ -16,7 +16,11 @@ class AURA_API AAuraCharacterBase : public ACharacter, public IAbilitySystemInte
 
 public:
 	AAuraCharacterBase();
+	
+	//~ Begin AbilitySystemInterface
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+	//~ End AbilitySystemInterface
+	
 	UAttributeSet* GetAttributeSet() { return AttributeSet; }
 
 protected:
