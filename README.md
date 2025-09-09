@@ -42,8 +42,8 @@
   >the Owner Actor is AuraPlayer State, the Avatar Actor is itself(AuraCharacter).
 - Init AuraEnemy's Ability Actor Info in BeginPlay directly, the both of Owner and Avatar is itself
 - Build a Attributes Adding Process
-  >StepOne: Create a variable as the Attribute.
-  >StepTwo: Create a OnRep function for the Attribute.
+  >StepOne: Create a variable as the Attribute.\
+  >StepTwo: Create a OnRep function for the Attribute.\
   >StepThree：Register the Attribute in GetLifetimeReplicatedProps.
 
 <img width="2319" height="1380" alt="Init Ability Actor Info" src="https://github.com/user-attachments/assets/db758ae0-9051-4264-a7c1-21c155d7531b" />
