@@ -49,5 +49,16 @@
 <img width="2319" height="1380" alt="Init Ability Actor Info" src="https://github.com/user-attachments/assets/db758ae0-9051-4264-a7c1-21c155d7531b" />
 <p align="center"> Init Ability Actor Info in different case</p>
 
+## Day Five
+### AttributeSet Macros and EffectActor
+- Use AttributeSet Macro to add game-specific functions
+- Create a EffectActor and overlap call back function
+  >Create a HealthPotion based on it
+<img width="1628" height="394" alt="image" src="https://github.com/user-attachments/assets/5e3ee582-d9a1-4842-9de6-dcb5b6e4e838" />
+<p align="center">AttributeSet Macros</p>
+<img width="1288" height="770" alt="image" src="https://github.com/user-attachments/assets/6508df16-1a8d-4d6b-b2f9-9c67516b1738" />
+<p align="center">Use ShowDebug AbilitySystem to Check Attributes</p>
+
+
   
   
