@@ -59,6 +59,11 @@
 <img width="1288" height="770" alt="image" src="https://github.com/user-attachments/assets/6508df16-1a8d-4d6b-b2f9-9c67516b1738" />
 <p align="center">Use ShowDebug AbilitySystem to Check Attributes</p>
 
-
-  
+## Day Six
+### Create UserWidget, WidgetController and HUD classes\
+- Globe Progress Bar
+  >Create a Globe Progress Bar based on UseWidget to derive the Health Globe and Mana Globe.
+- HUD
+ >Create a OverlayWidget based on UseWidget to and init in AuraHUD cpp class set AuraHUD class as HUD class in GameMode
+ 
   
