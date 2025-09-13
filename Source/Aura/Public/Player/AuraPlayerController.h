@@ -30,16 +30,19 @@ private:
 	// Input Mapping Context
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputMappingContext> AuraContext;
+
 	// Movement Input Action
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputAction> MoveAction;
+
 	// Cursor Check
-	IEnemyInterface* LastActor = nullptr;
-	IEnemyInterface* ThisActor = nullptr;
+	TScriptInterface<IEnemyInterface> LastActor;
+	TScriptInterface<IEnemyInterface> ThisActor;
 
 private:
 	// Movement
 	void Move(const FInputActionValue& InputActionValue);
+
 	// Cursor Check
 	void CursorTrace();
 };
