@@ -73,5 +73,12 @@
 <img width="1710" height="602" alt="image" src="https://github.com/user-attachments/assets/feda177e-8eee-4a4c-b12e-a364908802f2" />
 <p align="center">InitOverlay Function whitch be called by OnRep_PlayerState in AuraCharacter</p>
 
+## Day Eight
+### Delegate
+- Using Delegate to Broadcast the Attribute Changes for HUD
+  >Declare Delegate -> Declare Delagate varible -> Broadcast Init Values when HUD init -> Bind the Attribute to the Callback Fuction -> When the Attirbute has Changed Broadcast to HUD
+<img width="5605" height="3165" alt="deepseek_mermaid_20250913_a07a18" src="https://github.com/user-attachments/assets/dc0dd352-06cf-4c7c-9d58-6d04f35f0a27" />
+<p align="center">Full Delegate Workflow</p>
+
 
   
