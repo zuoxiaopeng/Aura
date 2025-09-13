@@ -59,6 +59,19 @@
 <img width="1288" height="770" alt="image" src="https://github.com/user-attachments/assets/6508df16-1a8d-4d6b-b2f9-9c67516b1738" />
 <p align="center">Use ShowDebug AbilitySystem to Check Attributes</p>
 
+## Day Six
+### Create UserWidget, WidgetController and HUD classes\
+- Globe Progress Bar
+  >Create a Globe Progress Bar based on UseWidget to derive the Health Globe and Mana Globe.
+- HUD
+ >Create a OverlayWidget based on UseWidget to and init in AuraHUD cpp class set AuraHUD class as HUD class in GameMode
 
-  
+ ## Day Seven
+ ### Wiget Controller
+ - Widget Controller monitor game data chages and broadcast the changes
+  >Based it to Create a AuraWidgetController class and init Overlay in AuraHUD class
+<img width="1710" height="602" alt="image" src="https://github.com/user-attachments/assets/feda177e-8eee-4a4c-b12e-a364908802f2" />
+<p align="center">InitOverlay Function whitch be called by OnRep_PlayerState in AuraCharacter</p>
+
+
   
