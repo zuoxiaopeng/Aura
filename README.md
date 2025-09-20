@@ -80,5 +80,14 @@
 <img width="5605" height="3165" alt="deepseek_mermaid_20250913_a07a18" src="https://github.com/user-attachments/assets/dc0dd352-06cf-4c7c-9d58-6d04f35f0a27" />
 <p align="center">Full Delegate Workflow</p>
 
+## Day Nine
+# Aura Effect Actor
+- Get TargetActor's AbilitySystemComponent and make a outgoingspec than apply effect to TargetActor
+<img width="1986" height="930" alt="image" src="https://github.com/user-attachments/assets/e261b47e-7a45-4df4-b8b9-a021dacbdec3" />
+<p align="center">ApplyEffectToTarget Function</p>
+
+
+
+
 
   
