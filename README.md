@@ -86,6 +86,16 @@
 <img width="1986" height="930" alt="image" src="https://github.com/user-attachments/assets/e261b47e-7a45-4df4-b8b9-a021dacbdec3" />
 <p align="center">ApplyEffectToTarget Function</p>
 
+## Day Ten
+## Effect Assert Tags
+- Define Effect Assert Tags Delegate in Asc -> Overlay Widget Conttroller Subscribed and Define Widget Row Delegate -> Overlay Widget Subscribe to
+<img width="1584" height="530" alt="image" src="https://github.com/user-attachments/assets/a052f60b-7bc0-45ab-b95c-ccfecf05248b" />
+<p align="center">OverlayWidgetConttroller Subscribed</p>
+<img width="1675" height="1031" alt="image" src="https://github.com/user-attachments/assets/b65c9fb1-1e56-44a9-86db-cab44da6c652" />
+<p align="center">OverlayWidget Subscribed</p>
+
+
+
 
 
 
