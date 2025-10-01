@@ -3,6 +3,9 @@
 
 #include "Character/AuraCharacterBase.h"
 
+#include "AbilitySystemComponent.h"
+#include "GameplayEffectTypes.h"
+
 // Sets default values
 AAuraCharacterBase::AAuraCharacterBase()
 {
@@ -21,9 +24,13 @@ void AAuraCharacterBase::InitAbilityActorInfo()
 	
 }
 
-UAbilitySystemComponent* AAuraCharacterBase::GetAbilitySystemComponent() const
+void AAuraCharacterBase::InitializePrimaryAttributes() const
 {
-	return AbilitySystemComponent;
+	check(IsValid(GetAbilitySystemComponent()));
+	check(DefaultPrimaryAttributes);
+	const FGameplayEffectContextHandle EffectContextHandle = GetAbilitySystemComponent()->MakeEffectContext();
+	const FGameplayEffectSpecHandle EffectSpecHandle = GetAbilitySystemComponent()->MakeOutgoingSpec(DefaultPrimaryAttributes, 1.0f, EffectContextHandle);
+	AbilitySystemComponent->ApplyGameplayEffectSpecToTarget(*EffectSpecHandle.Data.Get(), AbilitySystemComponent);	
 }
 
 

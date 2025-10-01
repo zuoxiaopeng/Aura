@@ -7,6 +7,7 @@
 #include "UI/Widget/AuraUserWidget.h"
 #include "AuraHUD.generated.h"
 
+struct FUIWidgetRow;
 class UAuraOverlayWidgetController;
 /**
  * 
@@ -33,4 +34,5 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	TSubclassOf<UAuraOverlayWidgetController> OverlayWidgetControllerClass;
+	
 };
